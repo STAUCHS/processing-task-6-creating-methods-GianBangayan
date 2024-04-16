@@ -33,10 +33,11 @@ public class Sketch extends PApplet {
         }
       }
     }
+    //makes an alternating grid of differently sized stick figures
     for(int i = -1; i <= 10; i++){
       for(int j = -1; j <= 10; j++){
         if(((i+j)%2) == 1){
-          drawMan(i*100,j*100,0.3);
+          drawMan(i*100,j*100,Math.sqrt(i*j)/10);
         }
       }
     }
